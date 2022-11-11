@@ -1,6 +1,5 @@
 //~
 import config from './utils/config.js'
-// import { default as CONNECT_PARAMS } from './utils/config.js'
 
 import express from 'express'
 
