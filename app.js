@@ -3,7 +3,7 @@ import config from './utils/config.js'
 
 import express from 'express'
 
-const app = express()
+// const app = express()
 
 import cors from 'cors'
 
@@ -26,6 +26,8 @@ mongoose.connect( config.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopolog
     .catch((error) => {
         console.log('XXXXXXXXXXX> error connection to MongoDB 😵: ', error.message)
     })
+
+const app = express()
 
 app.use( cors() )
 app.use( express.static('build') )

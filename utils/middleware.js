@@ -7,7 +7,7 @@ const requestLogger = (request, response, next) => {
     logger.info('Path:  ', request.path)
     logger.info('Body:  ', request.body)
     logger.info('FullUrl: ', request.protocol + '://' + request.get('host') + request.originalUrl)
-    logger.info('----------------------------------')
+    logger.info('----------------------------------------------')
     next()
 }
 
@@ -24,7 +24,7 @@ const errorHandler = ( error, request, response, next ) => {
         return response.status(400).json({ error: error.message })
     }
 
-    next(error)
+    next( error )
 }
 
 export default {
