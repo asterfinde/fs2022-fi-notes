@@ -3,8 +3,6 @@ import config from './utils/config.js'
 
 import express from 'express'
 
-// const app = express()
-
 import cors from 'cors'
 
 import notesRouter from './controllers/notes.js'
