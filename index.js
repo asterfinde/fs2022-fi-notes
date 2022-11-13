@@ -1,3 +1,8 @@
+/**
+ * Start the application importing the actual application from the app.js 
+ * 
+ */
+
 //~
 import http from 'http'
 

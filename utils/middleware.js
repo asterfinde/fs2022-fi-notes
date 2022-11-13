@@ -1,4 +1,12 @@
+/**
+ * Module to handle custom middlewares:
+ * • requestLogger
+ * • unknownEndpoint
+ * • errorHandler
+ * 
+ */
 //~
+
 import logger from './logger.js'
 
 /**

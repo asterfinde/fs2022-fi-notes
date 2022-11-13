@@ -1,8 +1,17 @@
+/**
+ * Module to handle all of the routes 
+ * 
+ * - The event handlers of routes are commonly referred to as 'controllers'
+ * - It creates a new router object and exports it to be available for all consumers of the module
+ * - The router is in fact a middleware, that can be used for defining "related routes" in a 
+ *   single place, that is typically placed in its own module (like a “mini-application”)
+ * 
+ */
+
 //~
 import express from 'express'
 import Note from '../models/note.js'
 
-//
 const notesRouter = express.Router()
 
 notesRouter.get( '/', ( request, response ) => {
@@ -51,7 +60,7 @@ notesRouter.delete( '/:id', (request, response, next ) => {
         .catch( error => next(error) )
 })
 
-notesRouter.put( '/:id', (request, response, next ) => {
+notesRouter.put( '/:id', ( request, response, next ) => {
     const body = request.body
 
     const note = {

@@ -1,7 +1,11 @@
+/**
+ * Module to handling of environment variables
+ * 
+ */
+
 //~
 import dotenv  from 'dotenv'
 
-//
 if ( process.env.NODE_ENV !== 'production' ) {
     dotenv.config()
 }
